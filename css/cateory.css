@@ -1,0 +1,1032 @@
+/* News Section Layout */
+*{
+    text-align: justify;
+    font-family: 'Lato', sans-serif;
+}
+.news-container {
+    display: flex;
+    align-items: stretch;
+}
+#main2{
+    width: 100%;
+    height: 100vh;
+    background-color: #00000000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+#hidden-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+#hidden-nav img{
+    width: 70%;
+    
+}
+
+
+@media (max-width: 700px){
+    #full{
+        width: 50vw !important;
+    }
+   
+}
+@media (max-width: 753px) {
+    .main2{
+        position: relative;
+       left:-180px;
+    }
+    .text1{
+        text-align: center;
+    }
+}
+@media (max-width: 615px) {
+    .main2{
+        position: relative;
+       left:-120px;
+    }
+    .text1{
+        text-align: center;
+    }
+}
+
+/* @media (max-width: 700px){
+    #full{
+        width: 50vw !important;
+    }
+} */
+
+nav{
+    position: relative;
+}
+
+@media (max-width:991px){
+    #main2{
+        display: block !important;
+    }
+}
+
+@media (max-width:501px){
+    #full i{
+        /* position: absolute; */
+        top: 2vh !important;
+    }
+}
+
+
+#nav{
+    display: flex;
+    justify-content: flex-end;
+    padding: 4px 50px;
+    color: #111;
+}
+
+#nav i{
+    font-size: 30px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#nav h2{
+    font-size: 2rem;
+}
+
+
+
+#full{
+    height: 100%;
+    width: 40vw;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #ffffff;
+    top: 0;
+    left: -50%;
+    /* filter: blur(15px); */
+    backdrop-filter: blur(10px);
+    padding: 35px 50px;
+    transition:ease-in-out .4s;
+}
+
+#full h4{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    /* background-color: #fff; */
+}
+
+#full i{
+    position: absolute;
+    top: 3vh;
+    right: 10%;
+    background-color: #fff;
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 50%;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.featured-news {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    /* /Setafixedheight/overflow: hidden;
+    /Preventsanycontentfromoverflowing/display: flex; */
+    align-items: flex-end;
+}
+
+.featured-news img {
+    width: 100%;
+    height: 100%;
+    object-fit:contained;
+    /* /Ensurestheimagefillsthecontainer/transition: transform 0.3s ease-in-out; */
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.featured-news:hover img {
+    transform: scale(1.06);
+}
+
+.featured-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: justify;
+    font-size: 14px;
+    box-sizing: border-box;
+    max-height: 100%; /* Prevents overlay from exceeding image */
+    overflow: hidden; /* Ensures no content spills out */
+}
+
+
+/* Small News List */
+.small-news-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px; /* Reduce gap between news items */
+}
+
+.small-news {
+    /* display: flex; */
+    /* min-height: 120px; */
+    /* align-items: center; */
+    background: white;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    text-align: justify;
+}
+.gb-container-72dba350 {
+    padding: 15px 15px 30px;
+    margin-bottom: 50px;
+    border-radius: 7px;
+    border: 1px solid var(--border-color);
+    background-color: var(--background);
+}
+/* @media (min-width: 768px) {
+    .sticky-container > .gb-inside-container,.sticky-container {
+        position: sticky;
+        top: 80px;
+    }} */
+/* .small-news:hover {
+    transform: translateX(10px);
+} */
+
+.small-news img {
+    width: 100%; /* Adjust as needed */
+    height: auto;
+    /* max-width: 270px; */
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 5px;
+}
+
+#news-img-1{
+    /* min-width: 0px; */
+    width: 70%;
+    height: 100%;
+}
+
+#news-img-2{
+    /* min-width: 0px; */
+    width: 65%;
+    height: 100%;
+}
+#news-img-3{
+    /* min-width: 0px; */
+    width: 75%;
+    height: 100%;
+}
+#news-img-4{
+    /* min-width: 0px; */
+    width: 65%;
+    height: 100%;
+}
+#news-img-5{
+    /* min-width: 0px; */
+    width: 59%;
+    height: 100%;
+}
+#news-img-6{
+    /* min-width: 0px; */
+    width: 73%;
+    height: 100%;
+}
+#news-img-7{
+    /* min-width: 0px; */
+    width: 69%;
+    height: 100%;
+}
+#news-img-8{
+    /* min-width: 0px; */
+    width: 80%;
+    height: 100%;
+}
+#news-img-9{
+    /* min-width: 0px; */
+    width: 78%;
+    height: 100%;
+}
+#news-img-10{
+    /* min-width: 0px; */
+    width: 71%;
+    height: 100%;
+}
+
+.left-news{
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    /* align-items: flex-start; */
+    /* justify-content: flex-start; */
+}
+
+/* .left-news h6{
+    font-size: 3rem;
+} */
+.font2{
+    font-size: 22px;
+}
+.small-news h6 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.small-news p {
+    font-size: 13px;
+    color: rgb(17, 17, 17);
+    margin-bottom: 0;
+}
+
+.padding-side{
+    padding: 1rem 5vw;
+    /* display: flex; */
+    /* flex-direction: column;
+    gap: 2rem; */
+}
+
+#news-h4{
+    font-size: 2.3rem;
+
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .news-container {
+        flex-direction: column;
+    }
+    .small-news-container {
+        height: auto;
+    }
+    .small-news {
+        flex-direction: column;
+        align-items: flex-start;
+        min-height: auto;
+    }
+    .small-news img {
+        width: 100%;
+        height: auto;
+    }
+    .all-images{
+        width: 100% !important;
+        height: 100%;
+    }
+
+    .small-news h6 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+    
+    .small-news p {
+        font-size: 15px;
+        color: rgb(17, 17, 17);
+        margin-bottom: 0;
+    }
+}
+
+.recent-post-header {
+    /* position: sticky; */
+    /* top: 0; */
+    z-index: 1000;
+    background-color: #001f3f;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 60%;
+    max-width: 600px;
+    margin-left: 20px;
+    margin-right: auto;
+    border-radius: 20px;
+    margin-top: -20px;
+}
+@media (max-width: 768px) {
+    .recent-post-header {
+        width: 90%;  /* Wider on smaller screens */
+        font-size: 1rem;  /* Smaller text for mobile */
+        padding: 8px 15px;
+    }
+
+    /* .secondary-post img {
+        width: 90px ;
+        height: 60px;
+        border-radius: 5px;
+    } */
+}
+
+@media (max-width: 480px) {
+    .recent-post-header {
+        width: 95%;
+        font-size: 0.875rem;
+        padding: 5px 10px;
+    }
+}
+
+.main{
+    position: sticky;
+    top: 4rem;
+}
+    
+.main-post-card {
+    position: relative;
+    overflow: hidden;
+}
+.main-post-card img {
+    width: 100%;
+    height: auto;
+}
+.main-post-card .card-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1px;
+    width: 100%;
+}
+.secondary-post img {
+    width: 100%;
+    /* height: 60px; */
+    border-radius: 5px;
+    object-fit: cover;
+}
+.ri-menu-4-line {
+    position: relative !important; /* Moves with page scroll */
+}
+@media (max-width: 990px) {
+    #search {
+        width: 20px;
+        height: 20px;
+        margin-top: 10px;
+        position: relative;
+        /*Insteadofabsolute*/transform: translateX(-30px);
+      
+}
+}
+.container {
+    max-width: 1400px; /* Adjust as needed */
+    margin: 0 auto; /* Centering */
+    display: flex;
+    justify-content: center;
+}
+@media (min-width: 2000px) {
+    .container {
+        max-width: 1600px; /* Adjust width */
+    }
+}
+
+
+.end-images-1{
+    width: 50%;
+}
+.end-images-2{
+    width: 57%;
+}
+.end-images-3{
+    width: 53%;
+}
+.end-images-4{
+    width: 62%;
+}
+.end-images-5{
+    width: 50%;
+}
+
+.hot-news-header {
+    background-color: #0B0E24; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+}
+
+.left-part-h6 h6{
+    font-size: 14px;
+    font-size: 600;
+}
+
+/* Wave Styling (Now on Top) */
+.wave {
+    position: absolute;
+    top: -1px;  /* Moves wave to top */
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    transform: rotate(180deg); /* Flips wave to appear at the top */
+}
+
+/* Footer Styling */
+.footer {
+    position: relative;
+    background-color: #000;
+    color: white;
+    padding: 80px 0 20px;
+    overflow: hidden;
+}
+ul.list-unstyled li a {
+    color: white !important;  /* Make text white */
+    text-decoration: none;  /* Remove underline */
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Add space between icon and text */
+}
+
+ul.list-unstyled li a svg {
+    fill: white !important;  /* Make SVG icon white */
+    width: 16px;  
+    height: 16px;  
+}
+hr {
+    width: 100% !important;
+    border: 1px solid white !important;
+    top:45px;
+    position: relative;
+}
+
+.social-box {
+    border: 0.1px solid #565656; /* Ultra-thin border */
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.last p{
+    margin-top: 20px;
+}
+/* Icon and Text Row */
+.social-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-title svg {
+    width: 50px;
+    height: 50px;
+    fill: white;
+   position: relative;
+    top: 15px;
+}
+
+.social-title h5 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Link Styling */
+.social-box p {
+    margin: -10px 0 10px;
+    margin-left: 60px;
+    font-size: 14px;
+    color:white;
+}
+
+.social-box a {
+    color: #38a1ff;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    font-size: 14px;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    width: 90%;
+    max-width: 300px;
+    margin-top: 10px;
+}
+
+/* WhatsApp Icon */
+.whatsapp-btn svg {
+    width: 25px;
+    height: 25px;
+    fill: white;
+}
+/* ======= Responsive Fixes ======= */
+@media (max-width: 1024px) {
+    .news-container {
+        flex-direction: column;
+        gap: 20px; /* Add proper spacing */
+    }
+
+    .featured-news {
+        height: auto;
+    }
+
+    .featured-news img {
+        width: 100%;
+        height: auto;
+    }
+
+    .small-news-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px; /* Fix gap issue */
+    }
+
+    .small-news {
+        display: flex;
+        flex-direction: column;
+        gap: 12px; /* Ensure visible spacing */
+        padding: 15px;
+    }
+
+    .small-news img {
+        width: 100%;
+        height: auto;
+    }
+
+    .recent-post-header {
+        width: 80%;
+        font-size: 1.1rem;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .featured-news {
+        height: auto;
+    }
+
+    .news-container {
+        flex-direction: column;
+        gap: 25px; /* Ensure spacing */
+    }
+
+    .small-news-container {
+        gap: 20px; /* Add more gap for visibility */
+    }
+
+    .small-news {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        text-align: left;
+        padding: 15px;
+    }
+
+    .small-news img {
+        width: 100%;
+    }
+
+    .padding-side {
+        padding: 1rem 5vw;
+    }
+
+    .small-news h6 {
+        font-size: 1.3rem;
+    }
+
+    .small-news p {
+        font-size: 14px;
+    }
+
+    .end-images {
+        width: 100%;
+    }
+
+    .recent-post-header {
+        width: 90%;
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main2{
+        position: relative;
+        left:-70px;
+    }
+    .main1{
+        margin-top:50px;
+    }
+    .news-container {
+        flex-direction: column;
+        gap: 30px; /* Ensuring visible spacing */
+    }
+
+    .featured-news {
+        height: auto;
+    }
+
+    .featured-overlay {
+        font-size: 13px;
+        padding: 6px;
+    }
+
+
+    .small-news {
+        gap: 18px; /* Adding gap between news items */
+        padding: 15px;
+        border-bottom: 1px solid #ddd; /* Optional: separate news items visually */
+    }
+
+    .recent-post-header {
+        width: 95%;
+        font-size: 0.9rem;
+        padding: 6px 10px;
+    }
+
+    .small-news h6 {
+        font-size: 1.2rem;
+    }
+
+    .small-news p {
+        font-size: 14px;
+    }
+
+    .social-box {
+        width: 90%;
+    }
+
+    .whatsapp-btn {
+        width: 100%;
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+}
+@media (max-width: 768px) {
+    .col-lg-4 {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+    }
+    .font1{
+        font-size: 25px;
+    }
+    .social-box {
+        width: 100%;
+        display: block;
+        padding: 15px;
+        text-align: center;
+        box-sizing: border-box;
+        max-width: 100% !important;
+    }
+    .whatsapp-btn{
+        width: 100%;
+        max-width: 100% !important;
+    }
+    
+}
+
+/* News Section Layout */
+.news-container {
+    display: flex;
+    align-items: stretch;
+}
+
+/* Centering Main Content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+#hidden-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+#hidden-nav img{
+    width: 70%;
+}
+
+@media (max-width: 700px){
+    #full{
+        width: 50vw !important;
+    }
+}
+
+nav{
+    position: relative;
+}
+
+@media (max-width:991px){
+    #main2{
+        display: block !important;
+    }
+    .search-icon {
+        display: flex; /* Ensures alignment */
+        justify-content: flex-end; /* Moves it to the right */
+        align-items: center;
+        margin-left: auto; /* Pushes to the right */
+    }
+}
+@media (max-width: 575px) {
+   
+    .search-icon {
+        display: flex; /* Enables flexbox */
+        justify-content: flex-end; /* Moves it to the right */
+        align-items: center;
+        margin-left: auto; /* Ensures it aligns to the right */
+    }
+    .search-icon i {
+        font-size: 18px; /* Adjust size for better visibility */
+        cursor: pointer;
+    }
+}
+
+
+@media (max-width:501px){
+    #full i{
+        top: 2vh !important;
+    }
+}
+
+#nav {
+    display: flex;
+    justify-content: center; /* Centers nav items */
+    align-items: center;
+    gap: 20px;
+}
+
+
+#nav i{
+    font-size: 30px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#nav h2{
+    font-size: 2rem;
+}
+
+#full{
+    height: 100%;
+    width: 40vw;
+    position: fixed;
+}
+
+/* Ensure Proper Centering on Large Screens */
+/* Adjust Container for Larger Screens */
+@media (min-width: 2000px) {
+    .container {
+        max-width: 1600px; /* Increase width */
+    }
+   
+}
+.navbar-brand {
+    max-width: 1600px; /* Apply to all screen sizes */
+}
+
+@media (min-width: 1400px) {
+    .navbar-brand {
+        margin-left:50px;
+    }
+}
+
+
+/* News Section Layout */
+.news-container {
+    display: flex;
+    align-items: stretch;
+}
+
+/* Centering Main Content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+/* Navigation */
+#hidden-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#hidden-nav img {
+    width: 70%;
+}
+
+/* Responsive Sidebar */
+@media (max-width: 700px) {
+    #full {
+        width: 50vw !important;
+    }
+}
+
+/* Navigation Positioning */
+nav {
+    position: relative;
+}
+
+
+@media (max-width: 501px) {
+    #full i {
+        top: 2vh !important;
+    }
+}
+
+/* Navbar Flex Alignment */
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    color: #111;
+}
+
+#nav i {
+    font-size: 30px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#nav h2 {
+    font-size: 2rem;
+}
+
+/* Sidebar Width */
+#full {
+    height: 100%;
+    width: 40vw;
+    position: fixed;
+}
+
+
+
+/* Fix Category and Finance Alignment */
+.category-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.category-container h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Ensure Proper Centering on Large Screens */
+@media (min-width: 1500px) {
+    .container {
+        max-width: 1400px;
+    }
+}
+.font1 {
+    font-size: 17px !important;
+}
+
+/* Make the Footer More Responsive */
+
+
+/* Ensure Text Wraps Properly */
+.text-block {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media (min-width: 1300px) {
+    .main1 {
+        max-width: 1400px; /* Adjust width to keep it centered */
+        margin: 20px auto; /* Centers the element */
+    }
+}
+/* Ensuring Fixed Centering */
+.container {
+    max-width: 1500px;  /* Set a fixed max-width */
+    margin: 0 auto;  /* Always center horizontally */
+    padding: 0 20px; /* Prevent content from touching edges */
+}
+
+.navbar {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white; /* Ensure visibility */
+    z-index: 10000; /* Make sure it's above all other elements */
+}
+.search-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 50%;
+    border:none;
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+.search-box input {
+    border: none;
+    outline: none;
+   
+}
+#searchIcon{
+    font-size:10px;
+}
